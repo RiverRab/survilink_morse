@@ -1,0 +1,37 @@
+name: survilink_morse
+description: "SurviLink Morse App - envoyer/recevoir du code Morse"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icônes iOS
+  cupertino_icons: ^1.0.8
+
+  # 🎵 Sons (pour le bip Morse)
+  audioplayers: ^5.2.1
+
+  # 📳 Vibration (dot/dash feedback)
+  vibration: ^1.7.7
+
+  # ✍️ Polices modernes (UI stylée)
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # 🔊 Assets pour les sons du Morse
+  assets:
+    - assets/sounds/dot.mp3
+    - assets/sounds/dash.mp3
